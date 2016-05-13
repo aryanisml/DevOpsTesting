@@ -1,0 +1,5 @@
+C:\Users\swapnil\Documents\Visual Studio 2012\Projects\ServiceMangerWithDevOPS\ServiceMangerWithDevOPS\bin\ServiceMangerWithDevOPS.dll
+C:\Users\swapnil\Documents\Visual Studio 2012\Projects\ServiceMangerWithDevOPS\ServiceMangerWithDevOPS\bin\ServiceMangerWithDevOPS.pdb
+C:\Users\swapnil\Documents\Visual Studio 2012\Projects\ServiceMangerWithDevOPS\ServiceMangerWithDevOPS\obj\Debug\ServiceMangerWithDevOPS.csprojResolveAssemblyReference.cache
+C:\Users\swapnil\Documents\Visual Studio 2012\Projects\ServiceMangerWithDevOPS\ServiceMangerWithDevOPS\obj\Debug\ServiceMangerWithDevOPS.dll
+C:\Users\swapnil\Documents\Visual Studio 2012\Projects\ServiceMangerWithDevOPS\ServiceMangerWithDevOPS\obj\Debug\ServiceMangerWithDevOPS.pdb
