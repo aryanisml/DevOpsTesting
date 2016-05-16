@@ -1,0 +1,74 @@
+﻿<div ng-controller="taskController">
+
+            <br>
+
+            <div>
+
+                <div ng-repeat="v in taskInfo" class="panel panel-default"
+                    ng-model="taskInfo"
+                    ng-class="{ 'active' : v.isActive , 'inActive' : !v.isActive}">
+
+                    <div class="panel-heading">
+                        {{v.title}}
+
+                                                                                                {{v.isActive}}
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <ul>{{v.Name}}</ul>
+
+                        <ul>{{v.Description}}</ul>
+
+
+
+                        <ul>
+
+<!--                            <div ng-if="(v.isActive == 1)">
+
+                                <button
+                                    type="submit" id="{{v.title}}"
+                                    ng-click="showProgress(v, $index)"
+                                    class="btn btn-sm btn-primary">
+                                    Start</button>
+
+                            </div>
+
+
+
+                            <div ng-if="(v.isActive == 0)">
+
+                                <button
+                                    type="submit" id="{{v.title}}" disabled
+                                    ng-click="showProgress(v, $index)"
+                                    class="btn btn-sm btn-primary">
+                                    Start</button>
+
+                            </div>
+
+                            -->
+
+                            <div>
+
+                                <button
+                                    type="submit" id="$index"
+                                    ng-click="showProgress(v, $index)"
+                                    class="btn btn-sm btn-primary" ng-disabled="!v.isActive">
+                                    Start</button>
+
+                            </div>
+
+
+
+
+
+
+                            <ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
