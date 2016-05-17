@@ -10,13 +10,13 @@
 
 
 
-    taskInitializationFunc.$inject = ['$scope']
+    taskInitializationFunc.$inject = ['$scope' ,'serviceManagerFactory' ]
 
 
 
 
 
-    function taskInitializationFunc($scope) {
+    function taskInitializationFunc($scope, serviceManagerFactory) {
 
 
 
@@ -30,6 +30,7 @@
         $scope.$watch('roundProgressData', function (newValue, oldValue) {
             newValue.percentage = newValue.label / 100;
         }, true);
+        
         $scope.taskInfo = [
 
             {
@@ -118,8 +119,25 @@
 
 
         ];
-
-
+ 
+       
+       
+  serviceManagerFactory.getServiceTask()
+    .then(
+      function(result) {
+        // promise was fullfilled (regardless of outcome)
+        // checks for information will be peformed here
+       window.alert(result);
+      },
+      function(error) {
+        // handle errors here
+        console.log(error);
+      }
+    );
+       
+       
+       
+                      
         $scope.initalValue = "0";
         $scope.showProgress = showProgessFunc;
         var values = $scope.taskInfo.length;
